@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>CSM AAUP</title>
+  
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link href='https://fonts.googleapis.com/css?family=Alfa Slab One' rel='stylesheet'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		.mySlides {display:none}
+		.w3-left, .w3-right, .w3-badge {cursor:pointer}
+		.w3-badge {height:13px;width:13px;padding:0}
+	</style>
+</head>
+
+
+<body id = "grad1">
+<div id="fb-root"></div>
+
+<!-- Script for Faebook video feed -->
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+<!-- NAV BAR! -->
+<div style=" background-color:#425262; height: 300px; z-index:10; width: 100%;position: relative; min-width: 1000px;"> 
+<img src="assets/Images/TopBannerIcon.png" alt="Los Angeles" style="width:500px; margin-left: 20%;">
+		<nav class="nav nav5">
+            <ul style = " display: inline-block; padding-left: 50px;">
+                <li>
+                <a class = "navItem" href="#" style = "color:#92a2bd ">Home</a>
+                    <ul class = "subNav">
+                        <li><a href="#">Subnav Item</a></li>
+                        <li><a href="#">Subnav Item</a></li>
+                        <li><a href="#">Subnav Item</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class = "navItem" href="#" style = "color:#92a2bd">News + Events</a>
+                    <ul class = "subNav">
+                        <li><a href="#">Subnav Item</a></li>
+                        <li><a href="#">Subnav Item</a></li>
+                        <li><a href="#">Subnav Item</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class = "navItem" href="#" style = "color:#92a2bd ">Information</a>
+                    <ul class = "subNav">
+                        <li><a href="#">Subnav Item</a></li>
+                        <li><a href="#">Subnav Item</a></li>
+                        <li><a href="#">Subnav Item</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class = "navItem" href="#" style = "color:#92a2bd ">Resources</a>
+                    <ul class = "subNav">
+                        <li><a href="#">Subnav Item</a></li>
+                        <li><a href="#">Subnav Item</a></li>
+                        <li><a href="#">Subnav Item</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class = "navItem" href="#" style = "color:#92a2bd ">Who We Are</a>
+                    <ul class = "subNav">
+                        <li><a class = "subNav" href="#">Subnav Item</a></li>
+                        <li><a href="#">Subnav Item</a></li>
+                        <li><a href="#">Subnav Item</a></li>
+                    </ul>
+                </li>
+				                <li>
+                    <a class = "navItem" href="#" style = "color:#92a2bd ">Membership</a>
+                    <ul class = "subNav">
+                        <li><a class = "subNav" href="#">Subnav Item</a></li>
+                        <li><a href="#">Subnav Item</a></li>
+                        <li><a href="#">Subnav Item</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+</div>
+<!-- IMAGE BAR! -->
+<div class="container"> 
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="assets/Images/imageTestCroped.png" alt="Los Angeles" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="assets/Images/BannerImageBuilding.png" alt="Chicago" style="width:100%;">
+      </div>
+    
+      <div class="item">
+        <img src="assets/Images/image3.png" alt="New york" style="width:100%;">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+		<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+		</script>
+<!--BAR BELOW THE IMAGE! --> 
+<div style = "background-color: #2b3642; height: 100px; width: 100%; min-width: 1000px;">
+
+</div> 
+<!-- NAIN PAGE IN -->
+<div id="mainPage">
+<section>
+	<div class="container-fluid">
+	<div class="row" style="margin-top:25px; margin-left:25px; margin-right:25px; margin-bottom:25px;">
+		<div class="col-md-4">
+			<h1>What is the AAUP?</h1>
+			<p>The American Association of University Professors (AAUP) is a nonprofit membership association of faculty and other academic professionals. Its mission is to advance academic freedom and shared governance; to define fundamental professional values and standards for higher education; to promote the economic security of faculty, academic professionals, graduate students, post‐doctoral fellows, and all those engaged in teaching and research in higher education; to help the higher education community organize to make our goals a reality; and to ensure higher education's contribution to the common good.</p>
+			<p>Read more about AAUP here:</p>
+			<a href = "https://www.aaup.org/about-aaup">https://www.aaup.org/about-aaup</a>
+		</div>
+	
+		<div class="col-md-4">
+			<h1>CSM Chapter of AAUP</h1>
+			<p>CSM has a recognized Chapter of AAUP – one of more than 500 local groups that serve accredited colleges and universities. We promote basic academic freedom, quality education, and other core AAUP principles and belong to the Colorado Conference (https://aaupcolorado.org/).   We encourage you to learn more about AAUP and become a member.  Regardless of formal membership, however, you are welcome to participate in our Chapter activities.  We serve the needs of all faculty and academic professionals, post‐doctoral fellows, and graduate students engaged in teaching and research and you can reach us by direct contact with any of the Chapter officers, or privately through our “Need Help” service.</p>
+	
+		</div>
+		<div class="col-md-4">
+			<h1>Contact Us!</h1>
+			<p>CSM has a recognized Chapter of AAUP – one of more than 500 local groups that serve accredited colleges and universities. We promote basic academic freedom, quality education, and other core AAUP principles and belong to the Colorado Conference (https://aaupcolorado.org/).   We encourage you to learn more about AAUP and become a member.  Regardless of formal membership, however, you are welcome to participate in our Chapter activities.  We serve the needs of all faculty and academic professionals, post‐doctoral fellows, and graduate students engaged in teaching and research and you can reach us by direct contact with any of the Chapter officers, or privately through our “Need Help” service.</p>
+		</div>
+  </div>
+  <div class="row" style="margin-top:25px; margin-left:25px; margin-right:25px; margin-bottom:25px;">
+    <div class="col-md-8" style="background-color:lavender;">
+		<h2> FEATURED VIDEO: </h2>
+		<p> AAUP 2016 A Year in Review </p>
+		<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FAAUPNational%2Fvideos%2F1378773228822825%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+
+	</div>
+	<div class="col-md-4">
+		<a class="twitter-timeline" data-lang="en" data-width="300" data-height="500" href="https://twitter.com/AAUP">Tweets by AAUP</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+	</div>
+</div>
+
+
+</section>
+</div>
+
+<footer style=" background-color:#425262; height: 300px; top: -10px; z-index:10; width: 100%;position: relative; min-width: 1500px;">
+	<div style = "background-color: #2b3642; height: 50px; width: 100%; min-width: 1000px;">
+
+	</div>
+
+		<div class="row" style="margin-left: 15%; margin-top: 50px; margin-right: 15%; font-weight: bold; font-size:medium;">
+			<div class="col-xs-7">
+				<img src="assets/Images/aaup_nav.png" style = "width:195.5px; height: 68px; float: left;"/>
+				<p style= "float:left; position: relative; margin-left: 10px; color: #92a2bd;">
+				Colorado School of Mines <br> AAUP Chapter <br> 1500 Illinois Street <br> Golden, CO 80401 <br> Phone: 202-737-5900 <br><br>  <span style = "color: red; ">aaup@aaup.org</span> 
+				</p>
+			</div>
+
+			<div class="col-xs-5" style= " background-color: clear; margin-top: -50px;">
+
+				<button class="buttonFooter buttonFooter1 buttonFooterHover" >Visit AAUP</button>
+				<button class="buttonFooter buttonFooter2 buttonFooterHover" >Visit AAUP of Colorado</button>
+				<div style = "color: #6b7b8b; margin-right: 10px; width: 300px; float: right;">
+				<div style = " float: right;">
+				<p>Follow AAUP </p>
+				<div style = " float: right;">
+				<img src="assets/Images/facebook-icon.png" style = "width: 50px; height: 50px;">
+				<img src="assets/Images/twitter-icon.png" style = "width: 50px; height: 50px;">
+				</div>
+				</div>
+				</div>
+			</div>
+			
+		</div>
+
+</footer>
+</body>
+</html>
