@@ -34,20 +34,50 @@
   js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
+<!-- Script for Twitter feed -->
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId            : '1495401057173187',
+      autoLogAppEvents : true,
+      xfbml            : true,
+      version          : 'v2.9'
+    });
+    FB.AppEvents.logPageView();
+  };
 
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+<script>window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+
+  return t;
+}(document, "script", "twitter-wjs"));</script>
 
 <!-- NAV BAR! -->
-<div style=" background-color:#425262; height: 300px; z-index:10; width: 100%;position: relative; min-width: 1000px;"> 
+<div class="navBar "> 
 <img src="assets/Images/TopBannerIcon.png" style="width:700px; margin-left: 20%;">
 		<nav class="nav nav5">
             <ul style = " display: inline-block; padding-left: 20px;">
                 <li>
-                <a class = "navItem" href="#" style = "color:#92a2bd ">Home</a>
-                    <ul class = "subNav">
-                        <li><a href="#">Subnav Item</a></li>
-                        <li><a href="#">Subnav Item</a></li>
-                        <li><a href="#">Subnav Item</a></li>
-                    </ul>
+                <a class = "navItem" href="index.html" style = "color:#92a2bd ">Home</a>
                 </li>
                 <li>
                     <a class = "navItem" href="#" style = "color:#92a2bd">News + Events</a>
@@ -76,7 +106,7 @@
                 <li>
                     <a class = "navItem" href="#" style = "color:#92a2bd ">Who We Are</a>
                     <ul class = "subNav">
-                        <li><a class = "subNav" href="#">Subnav Item</a></li>
+                        <li><a class = "subNav" href="faculty.html">Faculty</a></li>
                         <li><a href="#">Subnav Item</a></li>
                         <li><a href="#">Subnav Item</a></li>
                     </ul>
@@ -139,7 +169,7 @@
 <div id="mainPage">
 <section>
 	<div class="container-fluid">
-	<div class="row" style="margin-top:25px; margin-left:25px; margin-right:25px; margin-bottom:25px; border-bottom: 5px solid; border-color: #D3D3D3;">
+	<div class="row" style="margin-top:25px; margin-left:25px; margin-right:25px; margin-bottom:25px; border-bottom: 5px solid; border-color: #D3D3D3; text-align: justify;">
 		<div class="col-md-4">
 			<h1>What is the AAUP?</h1>
 			<p>The American Association of University Professors (AAUP) is a nonprofit membership association of faculty and other academic professionals. Its mission is to advance academic freedom and shared governance; to define fundamental professional values and standards for higher education; to promote the economic security of faculty, academic professionals, graduate students, post‐doctoral fellows, and all those engaged in teaching and research in higher education; to help the higher education community organize to make our goals a reality; and to ensure higher education's contribution to the common good.</p>
@@ -211,7 +241,8 @@ window.onclick = function(event) {
 
 	</div>
 	<div class="col-md-4">
-		<a class="twitter-timeline" data-lang="en" data-width="300" data-height="500" href="https://twitter.com/AAUP">Tweets by AAUP</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+		
+<a class="twitter-timeline" data-width="300" data-height="400" href="https://twitter.com/AAUP">Tweets by AAUP</a>
 	</div>
 </div>
 

@@ -1,3 +1,18 @@
+/* nav bar styling for outside div container */
+.navBar {
+	background-color:#425262; 
+	height: 300px; 
+	z-index:10; 
+	width: 100%;
+	position: relative; 
+	min-width: 1000px;
+}
+
+.navBarImg{
+	width:700px; 
+	margin-left: 20%;
+	
+}
 
 .navDiv div{ 
 	background-color:#333; 
@@ -120,6 +135,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     margin-bottom: 100px;
     margin-right: auto;
     margin-left: auto;
+	min-width: 600px;
 }
 .navItem {
 	font-size: 20px;
