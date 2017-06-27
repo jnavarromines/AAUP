@@ -130,12 +130,25 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 #mainPage {
 	background-color: white; 
 	height: 1500px; 
-	width: 60%; 
+	width: 1150px; 
 	margin-top: 50px;
     margin-bottom: 100px;
     margin-right: auto;
     margin-left: auto;
 	min-width: 600px;
+}
+
+#mainPage p {
+	font-size: 12px;
+}
+
+#mainPage a {
+	font-size: 12px;
+}
+
+#mainPage h1 {
+	font-size: 30px;
+	font-weight: bold;
 }
 .navItem {
 	font-size: 20px;
