@@ -10,6 +10,12 @@
 	padding-top:0px;
 }
 
+.content-font-index {
+	font-size: 200%;
+}
+.white-font:{
+	color: white;
+}
 
 .dark-blue{
 background-color: #2b3642;
