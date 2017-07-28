@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>CSM AAUP</title>
+  
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link href='https://fonts.googleapis.com/css?family=Alfa Slab One' rel='stylesheet'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Bowlby+One" rel="stylesheet">
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+	
+	
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	<style>
+		.mySlides {display:none}
+		.w3-left, .w3-right, .w3-badge {cursor:pointer}
+		.w3-badge {height:13px;width:13px;padding:0}
+	</style>
+</head>
+
+
+<body id = "grad1">
+<div id="fb-root"></div>
+
+<!-- Script for Faebook video feed -->
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId            : '1495401057173187',
+      autoLogAppEvents : true,
+      xfbml            : true,
+      version          : 'v2.9'
+    });
+    FB.AppEvents.logPageView();
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+<!-- Script for Twitter feed -->
+<script>window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+
+  return t;
+}(document, "script", "twitter-wjs"));</script>
+<div class="light-blue">
+	<div class="container navBar" style = "width: 100%;">
+		<nav class="navbar navbar-toggleable-lg navbar-inverse bg-faded" style = "background-color: #425262; border: none; margin-bottom: 0px; ">
+			<button class="navbar-toggler navbar-toggler-right  dark-blue" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<a class="navbar-brand currentPageFont" style = "font-size:40px;">Home</a>
+			<div class="collapse navbar-collapse" class = "margin-bottom: 0px;" id="navbarNavDropdown">
+				<ul class="navbar-nav">
+					<li class="nav-item style-navBarItem">
+						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item dropdown style-navBarItem">
+						<a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							News + Events
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<a class="dropdown-item" href="#">News</a>
+							<a class="dropdown-item" href="#">Events</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown style-navBarItem">
+						<a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Information
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<a class="dropdown-item" href="#">Constitution</a>
+							<a class="dropdown-item" href="#">BYLAWS</a>
+							<a class="dropdown-item" href="#">Documents</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown style-navBarItem">
+						<a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Who We Are
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<a class="dropdown-item" href="faculty.html">Faculty</a>
+							<a class="dropdown-item" href="our_purpose.html">Our Purpose</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown style-navBarItem">
+						<a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Links
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<a class="dropdown-item" href="https://www.aaup.org/">AAUP - National</a>
+							<a class="dropdown-item" href="https://www.aaup.org/reports-publications/journal-academic-freedom">AAUP Journal of Academic Freedom</a>
+							<a class="dropdown-item" href="http://portfolio.du.edu/aaup">University Of Denver Chapter</a>
+							<a class="dropdown-item" href="https://aaupcsu.org/">Colorado State University - Fort Collins Chapter</a>
+							<a class="dropdown-item" href="https://sites.google.com/site/coloradoadjunctswiki/">Colorado Community College Chapter</a>
+							<a class="dropdown-item" href="http://aaup-msudenver.org/">Metropolitan State University Chapter</a>
+							<a class="dropdown-item" href="http://www.cu-aaup.org/">University of Colorado- Boulder Chapter</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown style-navBarItem">
+						<a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Membership
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<a class="dropdown-item" href="join_aaup.html">Why Join Us?</a>
+							<a class="dropdown-item" href="https://www.aaup.org/membership/join">Join AAUP</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+</div>
+
+<!-- IMAGE BAR! -->
+<div class="container"> 
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="assets/Images/imageTestCroped.png" alt="Los Angeles" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="assets/Images/BannerImageBuilding.png" alt="Chicago" style="width:100%;">
+      </div>
+    
+      <div class="item">
+        <img src="assets/Images/image3.png" alt="New york" style="width:100%;">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+
+	
+<!--BAR BELOW THE IMAGE! --> 
+<div class = "dark-blue" style = "height: 100px; width: 100%; min-width: 1000px;">
+
+<img src="assets/Images/bannerTitle.png" alt="Colorado School of Mines Chapter" style = "padding-left: 20%;">
+
+</div> 
+<!-- NAIN PAGE IN -->
+<div id="mainPage">
+<section>
+	<div class="container-fluid">
+	<div class="row" style=" margin-top:25px; margin-left:25px; margin-right:25px; margin-bottom:25px; border-bottom: 5px solid; border-color: #D3D3D3;">
+		<div class="col-md-4">
+			<h1>What is the AAUP?</h1>
+			<p>The American Association of University Professors (AAUP) is a nonprofit membership association of faculty and other academic professionals. Its mission is to advance academic freedom and shared governance; to define fundamental professional values and standards for higher education; to promote the economic security of faculty, academic professionals, graduate students, post‐doctoral fellows, and all those engaged in teaching and research in higher education; to help the higher education community organize to make our goals a reality; and to ensure higher education's contribution to the common good.</p>
+			<p>Read more about AAUP <a href = "https://www.aaup.org/about-aaup"><u>Here</u></a> </p>
+			
+		</div>
+	
+		<div class="col-md-4">
+			<h1>CSM Chapter of AAUP</h1>
+			<p>CSM has a recognized Chapter of AAUP – one of more than 500 local groups that serve accredited colleges and universities. We promote basic academic freedom, quality education, and other core AAUP principles and belong to the Colorado Conference (https://aaupcolorado.org/).   We encourage you to learn more about AAUP and become a member.  Regardless of formal membership, however, you are welcome to participate in our Chapter activities.  We serve the needs of all faculty and academic professionals, post‐doctoral fellows, and graduate students engaged in teaching and research and you can reach us by direct contact with any of the Chapter officers, or privately through our “Need Help” service.</p>
+		</div>
+		<div class="col-md-4">
+			<h1>Contact Us!</h1>
+			<p> We serve the needs of all faculty and academic professionals, post‐doctoral fellows, and graduate students engaged in teaching and research. You can reach us by direct contact with any of the Chapter officers, or privately by clicking the "Need Help?" button below.</p>
+			<a class="btn btn-primary" style = "color: white;" onclick="document.getElementById('id01').style.display='block'">Need Help! <span class="glyphicon glyphicon-chevron-right"></span></a>
+
+			<p><br> You are also welcome to join the meetings for Faculty Senate. The Faculty Senate promotes cooperation and understanding among the various constituencies that comprise the school.
+			Click <a href = "http://facultysenate.mines.edu/"><u>Here</u></a> for more information!
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate">
+
+
+    <div class="container containerBorder">
+	    <div class="imgcontainer">
+			<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times
+			</span>
+		</div>
+		<label><b>Tell Us What We Can Help You With:</b></label>
+		<textarea class="form-control" id="exampleTextarea" placeholder="Write your message here" rows="1"></textarea>
+
+		<div class="form-group textAreaHeight">
+			<label for="exampleTextarea">Your Message:</label>
+			<textarea class="form-control" id="exampleTextarea" placeholder="Write your message here" rows="5"></textarea>
+		</div>
+        
+		<button type="submit" class = "submittButton">Submit</button>
+      
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>	
+			
+			
+			
+			
+			
+			
+			
+		</div>
+  </div>
+  <div class="row" style="margin-top:25px; margin-left:25px; margin-right:25px; margin-bottom:25px; ">
+    <div class="col-md-8">
+		<div>
+			<div class = "video-banner-style">
+				<h2> FEATURED VIDEO: </h2>
+				<p> AAUP 2016 A Year in Review </p>
+			</div>
+			<div >
+				<iframe class = "video-style" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FAAUPNational%2Fvideos%2F1378773228822825%2F&show_text=0&width=560" pading-bottom="50%" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-4" style = " border-style: solid; border-width: 30px 10px 30px 10px; border-radius: 25px;">
+			<a class="twitter-timeline" data-width="300" data-height="400" href="https://twitter.com/AAUP">Tweets by AAUP</a>
+	</div>
+</div>
+
+
+</section>
+</div>
+
+<footer style=" background-color:#425262; height: 220px; top: -10px; z-index:10; width: 100%;position: relative; min-width: 1500px;">
+	<div style = "background-color: #2b3642; height: 20px; width: 100%; min-width: 1000px;">
+
+	</div>
+
+		<div class="row" style="margin-left: 15%; margin-top: 10px; margin-right: 15%; font-weight: bold; font-size:medium;">
+			<div class="col-xs-7">
+				<img src="assets/Images/aaup_nav.png" style = "width:195.5px; height: 68px; float: left;"/>
+				<p style= "float:left; position: relative; margin-left: 10px; color: #92a2bd;">
+				Colorado School of Mines <br> AAUP Chapter <br> 1500 Illinois Street <br> Golden, CO 80401 <br> Phone: 202-737-5900 <br><br>  <span style = "color: red; ">aaup@aaup.org</span> 
+				</p>
+			</div>
+
+			<div class="col-xs-5" style= " background-color: clear; margin-top: 0px;">
+
+				<a class="buttonFooter buttonFooter1 buttonFooterHover"  href="https://www.aaup.org/">Visit AAUP</a>
+				<a  class="buttonFooter buttonFooter2 buttonFooterHover" href="https://aaupcolorado.org/" >Visit AAUP of Colorado</a>
+				<div style = "color: #6b7b8b; margin-right: 10px; width: 300px; float: right;">
+				<div style = " float: right;">
+				<p>Follow AAUP </p>
+				<div style = " float: right;">
+				<img src="assets/Images/facebook-icon.png" style = "width: 50px; height: 50px;">
+				<img src="assets/Images/twitter-icon.png" style = "width: 50px; height: 50px;">
+				</div>
+				</div>
+				</div>
+			</div>
+			
+		</div>
+
+</footer>
+</body>
+</html>
