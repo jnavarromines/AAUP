@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html >
 <head>
   <meta charset="UTF-8">
   <title>CSM AAUP</title>
@@ -32,34 +32,42 @@
 
 
 <body id = "grad1">
-<div id="fb-root"></div>
 
 
+<script type="text/javascript">
+$(document).ready(function(){
+    $(".dropdown").hover(            
+        function() {
+            $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true,true).slideDown("400");
+            $(this).toggleClass('open');        
+        },
+        function() {
+            $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true,true).slideUp("400");
+            $(this).toggleClass('open');       
+        }
+    );
+});
+</script>
 
-<!-- ***************************************** NAV BAR! ************************************************ -->
 <div class="light-blue">
 	<div class="container navBar" style = "width: 100%;">
-
-		<img src="assets/Images/aaup-logo-2_0.png" style = "width:195.5px; height: 68px; margin-left: 20px; margin-top: 20px; margin-bottom: 0px; border-radius: 15px;"/>
-
-		<nav class="navbar navbar-toggleable-lg navbar-inverse bg-faded" style = "background-color: #425262; border: none; margin-bottom: 0px; position: relative; text-align: center;">
+		<nav class="navbar navbar-toggleable-lg navbar-inverse bg-faded" style = "background-color: #425262; border: none; margin-bottom: 0px; ">
 			<button class="navbar-toggler navbar-toggler-right  dark-blue" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-			<!-- <a class="navbar-brand currentPageFont" style = "font-size:40px;">Home</a> -->
-			<div style="width:25%;"></div>
+			<a class="navbar-brand currentPageFont" style = "font-size:40px;">Who We Are</a>
 			<div class="collapse navbar-collapse" class = "margin-bottom: 0px;" id="navbarNavDropdown">
 				<ul class="navbar-nav">
 					<li class="nav-item style-navBarItem">
-						<a class="nav-link" href="index.html" style="font-size: 25px;"><b>Home</b> <span class="sr-only">(current)</span></a>
+						<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item dropdown style-navBarItem">
 						<a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 							News + Events
 						</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-							<a class="dropdown-item" href="news.html">News</a>
-							<a class="dropdown-item" href="events.html">Events</a>
+							<a class="dropdown-item" href="#">News</a>
+							<a class="dropdown-item" href="#">Events</a>
 						</div>
 					</li>
 					<li class="nav-item dropdown style-navBarItem">
@@ -67,7 +75,7 @@
 							Information
 						</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-							<a class="dropdown-item" href="constitution.html">Constitution</a>
+							<a class="dropdown-item" href="#">Constitution</a>
 							<a class="dropdown-item" href="#">BYLAWS</a>
 							<a class="dropdown-item" href="#">Documents</a>
 						</div>
@@ -109,140 +117,92 @@
 		</nav>
 	</div>
 </div>
-<!-- **************************************** NAV BAR END ***************************************************** -->
-
 	
 <!-- NAIN PAGE IN -->
-<div id="mainPage">
+<div id="mainPage" style = "padding-bottom: 50px;">
 <section>
         <!-- Page Heading -->
         <div class="row">
-            <div class="col-lg-12">
-			
-			
-			
-							<div class = "testGradient">
+            <div class="col-lg-12" >
+				<div class = "testGradient">
 					<h1 class="page-header" style = "padding-left: 50px; font-size: 40px; font-family: 'Play', sans-serif;">
 						<span style = "font-size: 70px; font-weight: 900; color: #830303;"><b><i>AAUP</i></b></span>
-						<small>Faculty</small>
+						<small>Our Purpose</small>
 					</h1>
 				</div>
+
             </div>
         </div>
         <!-- /.row -->
 
         <!-- Project One -->
 		 
-		         <div class="row">
-            <div class="col-md-7">
-                <a href="#">
-                    <img class="img-responsive" src="assets/Facultyimages/wendy.jpg" alt="" style = "padding-left: 50px; height: 250px;">
-                </a>
-            </div>
-            <div class="col-md-5">
-                <h2><b>Wendy Harris</b></h2>
-                <h4><b>Chapter President</b> </h4>
-                <p> Professor Geochemistry <br>
-					Department of Geology and Geological Engineering <br>
-					Phone: (+1) 303-273-3821 <br>
-					Fax: (+1) 303-273-3859<br>
-					Email: wharriso@mines.edu</p>
-                <a class="btn btn-primary" href="http://inside.mines.edu/Wendy-Harrison">Personal Website <span class="glyphicon glyphicon-chevron-right"></span></a>
-            </div>
-        </div>
-		
-		
-		
-		
-		
-        
-        <!-- /.row -->
-
-        <hr>
-
-        <!-- Project Two -->
-        <div class="row">
-            <div class="col-md-7">
-                <a href="#">
-                    <img class="img-responsive" src="assets/Facultyimages/marcelo.png" alt="" style = "padding-left: 50px; height: 250px;">
-                </a>
-            </div>
-            <div class="col-md-5">
-                <h2><b>Marcelo Godoy Simões</b></h2>
-                <h4><b>Chapter Vice President</b><br></h4>
-                <p>	Professor of Electrical Engineering<br>
-					Department of Electrical & Computer Science<br>
-					Phone: (303) 384-2350<br>
-					Email: msimoes@mines.edu</p>
-                <a class="btn btn-primary" href="http://inside.mines.edu/~msimoes/publications.html">Personal Website <span class="glyphicon glyphicon-chevron-right"></span></a>
-            </div>
-        </div>
-        <!-- /.row -->
-
-        <hr>
-		
-        <!-- Project Three -->
-        <div class="row">
-
-            <div class="col-md-7">
-                <a href="#">
-                    <img class="img-responsive" src="assets/Facultyimages/LNickum_RMNP.png" alt="" style = "padding-left: 50px; height: 250px;">
-                </a>
-            </div>
-            <div class="col-md-5">
-                <h2><b>Lisa Nickum</b></h2>
-                <h4><b>Library Faculty Representative</b></h4>
-                <p>Associate Librarian<br>
-					Phone: 303-273-3695 <br>
-					Email: lnickum@mines.edu</p></p>
-                <a class="btn btn-primary" href="https://webapps.mines.edu/DirSearch/Home/detail/Nickum%2cLisa%2cS.%2c">Personal Website <span class="glyphicon glyphicon-chevron-right"></span></a>
-            </div>
-        </div>
-		<hr>
-        <!-- Project Four -->
 		<div class="row">
             <div class="col-md-7">
-                <a href="#">
-                    <img class="img-responsive" src="assets/Facultyimages/uweGreife.jpg" alt="" style = "padding-left: 50px; height: 250px;">
-                </a>
+			<div style = "margin-left: 50px; ">
+				<div class = "headerGradient"style = "padding: 50px; border-radius: 25px; color:black;" > 
+                <h2> AAUP Serves All Faculty </h2>
+				<p style="font-size: 15px;"> 
+					The University of Delaware chapter of the American Association of University Professors, AAUP, exists to help our members on a number of levels:
+				</p>
+				<ul  style=" font-size: 15px;">
+					<li style=" font-size: 15px;">The achievement of economic security.</li>
+					<li style=" font-size: 15px;">A guarantee for freedom of expression.</li>
+					<li style=" font-size: 15px;">The right to work in an environment free of discrimination.</li>
+					<li style=" font-size: 15px;">The assurance of flexible benefits and a grievance procedure.</li>
+					<li style=" font-size: 15px;">Get health insurance</li>
+				</ul>
+				<p  style=" font-size: 15px;">
+				<br><br><br><br>
+					We also have an array of unique concerns that are related to education and research. It is the AAUP&#39;s task not only to protect the faculty&#39;s economic and workplace rights, but also to guarantee academic freedom and to conceptualize, and make the Administration aware of, specific ways in which the University can deepen its commitment to educational excellence. Without AAUP, there would be no campus organization devoted exclusively to faculty rights, economic concerns and educational excellence. Consequently, no faculty member gains by not supporting the AAUP&#39;s agenda. All faculty benefit from the AAUP&#39;s existence.
+				<br><br><br><br>
+				</p>
+				</div>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate">
+
+
+    <div class="container containerBorder">
+	    <div class="imgcontainer">
+			<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times
+			</span>
+		</div>
+		<label><b>Tell Us What We Can Help You With:</b></label>
+		<textarea class="form-control" id="exampleTextarea" placeholder="Write your message here" rows="1"></textarea>
+
+		<div class="form-group textAreaHeight">
+			<label for="exampleTextarea">Your Message:</label>
+			<textarea class="form-control" id="exampleTextarea" placeholder="Write your message here" rows="5"></textarea>
+		</div>
+        
+		<button type="submit" class = "submittButton">Submit</button>
+      
+    </div>
+  </form>
+				
+				
+				
+				
+				
             </div>
-            <div class="col-md-5">
-                <h2><b>Uwe Greife</b></h2>
-                <h4>
-					<b>Chapter Secretary and Treasurer</b><br></h4>
-                <p>Professor of Physics<br>
-					Department of Physics<br>
-					Phone: (303) 273-3618<br>
-					Email: ugreife@mines.edu</p>
-                <a class="btn btn-primary" href="http://inside.mines.edu/~ugreife/UGResearchMain.html">Personal Website <span class="glyphicon glyphicon-chevron-right"></span></a>
+			</div>
+			</div>
+			<div class="col-md-5">
+
+                    <img src="assets/Images/canoe.jpg" alt="" style = "height: 300px;">
+					
+					<div style = "height: 100px; width 200px; margin-top: 100px; border-radius: 25px; margin-right:30px;">
+					<p style = "font-size: 30px;  text-align: center; font-family: 'Racing Sans One', cursive;"> Be the change you want to see in the world... </p>
+					<p style = "font-size: 20px; text-align: left; padding-left:30px; font-family: 'Racing Sans One', cursive;">-Mahatma Ghandhi</p>
+					
+					</div>
+
             </div>
         </div>
-        <!-- /.row -->
+		
 
-        <hr>
-
-        <!-- Project Four -->
-        <div class="row">
-
-            <div class="col-md-7">
-                <a href="#">
-                    <img class="img-responsive" src="assets/Facultyimages/chuck.jpg" alt="" style = "padding-left: 50px; height: 250px;">
-                </a>
-            </div>
-            <div class="col-md-5">
-                <h2><b>Charles (Chuck) Stone</b></h2>
-                <h4><b>Teaching Professors’ Representative</b></h4>
-                <p>Teaching Professor<br>
-					Department of Physics<br>
-					Phone: (303) 273-3762<br>
-					Email: cstone@mines.edu</p></p>
-                <a class="btn btn-primary" href="http://inside.mines.edu/PH-charles-chuck-stone">Personal Website <span class="glyphicon glyphicon-chevron-right"></span></a>
-            </div>
-        </div>
-
-        <!-- /.row -->
-
-        <hr>
 
 
 
@@ -250,12 +210,12 @@
 </section>
 </div>
 
-<footer style=" background-color:#425262; height: 220px; top: -10px; z-index:10; width: 100%;position: relative; min-width: 1500px;">
-	<div style = "background-color: #2b3642; height: 20px; width: 100%; min-width: 1000px;">
+<footer style=" background-color:#425262; height: 300px; top: -10px; z-index:10; width: 100%;position: relative; min-width: 1500px;">
+	<div style = "background-color: #2b3642; height: 50px; width: 100%; min-width: 1000px;">
 
 	</div>
 
-		<div class="row" style="margin-left: 15%; margin-top: 10px; margin-right: 15%; font-weight: bold; font-size:medium;">
+		<div class="row" style="margin-left: 15%; margin-top: 50px; margin-right: 15%; font-weight: bold; font-size:medium;">
 			<div class="col-xs-7">
 				<img src="assets/Images/aaup_nav.png" style = "width:195.5px; height: 68px; float: left;"/>
 				<p style= "float:left; position: relative; margin-left: 10px; color: #92a2bd;">
@@ -263,7 +223,7 @@
 				</p>
 			</div>
 
-			<div class="col-xs-5" style= " background-color: clear; margin-top: 0px;">
+			<div class="col-xs-5" style= " background-color: clear; margin-top: -50px;">
 
 				<a class="buttonFooter buttonFooter1 buttonFooterHover"  href="https://www.aaup.org/">Visit AAUP</a>
 				<a  class="buttonFooter buttonFooter2 buttonFooterHover" href="https://aaupcolorado.org/" >Visit AAUP of Colorado</a>
@@ -281,18 +241,5 @@
 		</div>
 
 </footer>
-
-        <!-- javascript libraries / javascript files set for navbar --> 
-        <script type="text/javascript" src="js/jquery.min.js"></script>
-        <script type="text/javascript" src="js/modernizr.js"></script>
-        <script type="text/javascript" src="js/bootstrap.js"></script> 
-        <script type="text/javascript" src="js/bootstrap-hover-dropdown.js"></script>
-        <script type="text/javascript" src="js/jquery.easing.1.3.js"></script> 
-        <script type="text/javascript" src="js/skrollr.min.js"></script>  
-        <script type="text/javascript" src="js/smooth-scroll.js"></script>
-         <!-- jquery appear -->
-        <script type="text/javascript" src="js/jquery.appear.js"></script>
-   
-        <script type="text/javascript" src="js/mainNav.js"></script>
 </body>
 </html>

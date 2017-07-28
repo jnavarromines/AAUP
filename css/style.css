@@ -1,124 +1,57 @@
 /* nav bar styling for outside div container */
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
-.navBar {
-	background-color:#425262; 
-	height: 300px; 
-	z-index:10; 
-	width: 100%;
-	position: relative; 
-	min-width: 1000px;
+
+.video-style {
+	background-color: #3b5998;
+	border-radius: 0px 25px 25px 25px;
+	
+	border-style: solid;
+    border-width: 20px 20px 20px 20px;
+	padding-top:0px;
 }
 
-.navBarImg{
-	width:700px; 
-	margin-left: 20%;
+.content-font-index {
+	font-size: 200%;
+}
+.white-font:{
+	color: white;
+}
+
+.dark-blue{
+background-color: #2b3642;
+		
+}
+
+.light-blue {
+	background-color: #425262;
 	
 }
 
-.navDiv div{ 
-	background-color:#333; 
-	height: 300px; 
-	top: 0;
-	min-width: 1000px;
+.navBar {
+	color: black;
+	width: 100%;
 }
 
-.nav {
-	position: relative;
-	width: 1200px;
-	margin: auto;
-	height:50px;
-
-}
-/* */
-
-.subNav{
-	margin-top: 20px;
-}
-.nav ul {
-  zoom: 1;
-  position:absolute;
-  top:150px;
-  list-style: none; 
-  padding: 0;
+.currentPageFont{
+	font-family: 'Lora', serif;
 	font-weight: 900;
 }
-.nav ul:before,
-.nav ul:after {
-  content: "";
-  display: table;
-}
 
-.nav li a {
-	display: block;
-	text-align:center;
+.style-navBarItem{
+	margin-left: 20px;
+	margin-right: 20px;	
 }
-.nav ul:after {
-  clear: both;
-}
-.nav ul > li {
-  float: left;
-  position: relative;
-}
-/* block of each nav item, also contained borders but they were eliminated. */
-.nav a {
-  display: block;
-  margin-right: 30px;
-  margin-left: 30px;
-  margin-top: 10px;
-padding-bottom: 10px;
- /* padding: 10px 20px; */
-  line-height: 1.4em;
-  color: #fff;
-}
-
-
-/* Color of the sub bar */
-.nav li ul {
-  background: #273754;
-}
-
-/* Sub nav bars (Drop Down styling) */
-.nav li ul li {
-  width: 250px;
-  height: 50px;
-  padding-top: 0px;
-  border-style: outset;
-  border-width:1px;
-}
-.nav li ul a {
-  border: none;
-}
-/* Background when mouse hovers over text*/
-.subNav a:hover {
-  color: white;
-  font-weight: 900;
-}
-
-.nav ul > li:hover ul {
-  max-height: 1000px;
-  -webkit-transform: perspective(600) rotate3d(0, 0, 0, 0);
-}
-.nav li ul {
-  position: absolute;
-  left: 0 px;
-  top: 30px; /* This will set distance from drop down to text*/
-  z-index: 1;
-  max-height: 0;
-  overflow: hidden;
-  -webkit-transform: perspective(600) rotate3d(1, 0, 0, -90deg);
-  -webkit-transform-origin: 50% 0;
-  -webkit-transition: 350ms;
-  -moz-transition: 350ms;
-  -o-transition: 350ms;
-  transition: 350ms;
-}
-
-a:link {
-  text-decoration: none; /* Removes the underline blue linking typically found in hyper text*/
-  position: relative;
-}
-
 #grad1 {
+height: 100%;
+width: 100%;
+background: rgb(255,255,255); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(77,77,78,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(77,77,78,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(77,77,78,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#4d4d4e',GradientType=0 ); /* IE6-9 */
+}
+
+#grad2 {
 height: 100%;
 width: 100%;
 background: rgb(255,255,255); /* Old browsers */
@@ -149,15 +82,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 #mainPage h1 {
 	font-size: 30px;
 	font-weight: bold;
-}
-.navItem {
-	font-size: 20px;
-	font-family: 'Open Sans', sans-serif;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 900;
-	line-height: 26.4px;
-	color:blue;
 }
 .buttonFooter {
     border-radius: 5px;
