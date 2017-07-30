@@ -34,34 +34,9 @@
 <body id = "grad1">
 <div id="fb-root"></div>
 
-<!-- Script for Faebook video feed -->
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId            : '1495401057173187',
-      autoLogAppEvents : true,
-      xfbml            : true,
-      version          : 'v2.9'
-    });
-    FB.AppEvents.logPageView();
-  };
 
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-</script>
 <!-- Script for Twitter feed -->
+
 <script>window.twttr = (function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0],
     t = window.twttr || {};
@@ -78,75 +53,107 @@
 
   return t;
 }(document, "script", "twitter-wjs"));</script>
-<div class="light-blue">
-	<div class="container navBar" style = "width: 100%;">
-		<nav class="navbar navbar-toggleable-lg navbar-inverse bg-faded" style = "background-color: #425262; border: none; margin-bottom: 0px; ">
-			<button class="navbar-toggler navbar-toggler-right  dark-blue" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<a class="navbar-brand currentPageFont" style = "font-size:40px;">Home</a>
-			<div class="collapse navbar-collapse" class = "margin-bottom: 0px;" id="navbarNavDropdown">
-				<ul class="navbar-nav">
-					<li class="nav-item style-navBarItem">
-						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-					</li>
-					<li class="nav-item dropdown style-navBarItem">
-						<a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							News + Events
-						</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-							<a class="dropdown-item" href="#">News</a>
-							<a class="dropdown-item" href="#">Events</a>
-						</div>
-					</li>
-					<li class="nav-item dropdown style-navBarItem">
-						<a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Information
-						</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-							<a class="dropdown-item" href="#">Constitution</a>
-							<a class="dropdown-item" href="#">BYLAWS</a>
-							<a class="dropdown-item" href="#">Documents</a>
-						</div>
-					</li>
-					<li class="nav-item dropdown style-navBarItem">
-						<a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Who We Are
-						</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-							<a class="dropdown-item" href="faculty.html">Faculty</a>
-							<a class="dropdown-item" href="our_purpose.html">Our Purpose</a>
-						</div>
-					</li>
-					<li class="nav-item dropdown style-navBarItem">
-						<a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Links
-						</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-							<a class="dropdown-item" href="https://www.aaup.org/">AAUP - National</a>
-							<a class="dropdown-item" href="https://www.aaup.org/reports-publications/journal-academic-freedom">AAUP Journal of Academic Freedom</a>
-							<a class="dropdown-item" href="http://portfolio.du.edu/aaup">University Of Denver Chapter</a>
-							<a class="dropdown-item" href="https://aaupcsu.org/">Colorado State University - Fort Collins Chapter</a>
-							<a class="dropdown-item" href="https://sites.google.com/site/coloradoadjunctswiki/">Colorado Community College Chapter</a>
-							<a class="dropdown-item" href="http://aaup-msudenver.org/">Metropolitan State University Chapter</a>
-							<a class="dropdown-item" href="http://www.cu-aaup.org/">University of Colorado- Boulder Chapter</a>
-						</div>
-					</li>
-					<li class="nav-item dropdown style-navBarItem">
-						<a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Membership
-						</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-							<a class="dropdown-item" href="join_aaup.html">Why Join Us?</a>
-							<a class="dropdown-item" href="https://www.aaup.org/membership/join">Join AAUP</a>
-						</div>
-					</li>
-				</ul>
-			</div>
-		</nav>
-	</div>
+
+ <script>
+ $('ul.nav li.dropdown').hover(function() {
+  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+}, function() {
+  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+});
+</script>
+ 
+ 
+<div class = "light-blue" style = "margin-bottom: -20px;">
+	<nav class="navbar">
+		<div class="container">
+		<!--<h1> AAUP Colorado School Of Mines</h1><br>-->
+		<div style = "height: 100px;"><img src="assets/Images/aaup-logo-2_0.png" style=" height: 80px; border-style: solid; border-width: 5px; background-color: white; border-radius: 25px;"></div>
+		<ul class="nav navbar-nav">
+			<li>
+			<ul class="nav nav-pills" role="tablist">
+				<li class= "active"><a class="btn btn-lg btn-link" href="#" style="margin-right: 50px; background-color: #D2492A;"><b>Home</b></a></li>
+			</ul>
+			</li>
+<!-- NEWS AND EVENTS -->
+<li>
+			<ul class="nav navbar-inverse" style ="background-color: #425262;">
+				<li class="dropdown"><a class="btn-lg btn-link dropdown-toggle " data-toggle="dropdown" href="#" style ="background-color: #425262; margin-right: 50px;"><b>News + Events</b></a>
+					<ul class="dropdown-menu" style="margin-left: 15px;">
+						<li><a tabindex="-1" href="#">News</a></li>
+						<li><a tabindex="-1" href="#">Events</a></li>
+					</ul>
+				</li>
+			</ul>
+			</li>
+<!-- INFORMATION -->
+			<ul class="nav navbar-inverse" style ="background-color: #425262;">
+				<li class="dropdown"><a class="btn-lg btn-link dropdown-toggle " data-toggle="dropdown" href="#" style ="background-color: #425262; margin-right: 50px;"><b>Information</b></a>
+					<ul class="dropdown-menu" style="margin-left: 15px;">
+						<li><a tabindex="-1" href="#">Constitution</a></li>
+						<li><a tabindex="-1" href="#">Bylaws</a></li>
+						<li class="dropdown-submenu">
+							<a class="test" tabindex="-1" href="#">AAUP Affiliates<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<div class="dropdown-divider"></div>
+								<a style= "padding-left: 50px;"><b>External Links</b></a>
+								<div class="dropdown-divider"></div>
+								<li><a tabindex="-1" href="https://www.aaup.org/">AAUP - National</a></li>
+								<li><a tabindex="-1" href="https://www.aaup.org/reports-publications/journal-academic-freedom">AAUP Journal of Academic Freedom</a></li>
+								<li><a tabindex="-1" href="http://portfolio.du.edu/aaup">University Of Denver Chapter</a></li>
+								<li><a tabindex="-1" href="https://aaupcsu.org/">Colorado State University - Fort Collins Chapter</a></li>
+								<li><a tabindex="-1" href="https://sites.google.com/site/coloradoadjunctswiki/">Colorado Community College Chapter</a></li>
+								<li><a tabindex="-1" href="http://aaup-msudenver.org/">Metropolitan State University Chapter</a></li>
+								<li><a tabindex="-1" href="http://www.cu-aaup.org/">University of Colorado- Boulder Chapter</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			
+<!-- WHO WE ARE -->
+			<ul class="nav navbar-inverse" style ="background-color: #425262;">
+				<li class="dropdown"><a class="btn-lg btn-link dropdown-toggle " data-toggle="dropdown" href="#" style ="background-color: #425262; margin-right: 50px;"><b>Who We Are</b></a>
+					<ul class="dropdown-menu" style="margin-left: 15px;">
+						<li><a tabindex="-1" href="#">Faculty</a></li>
+						<li><a tabindex="-1" href="#">Our Purpose</a></li>
+					</ul>
+				</li>
+			</ul>
+<!-- MEMBERSHIP -->			
+			<ul class="nav navbar-inverse" style ="background-color: #425262;">
+				<li class="dropdown"><a class="btn-lg btn-link dropdown-toggle " data-toggle="dropdown" href="#" style ="background-color: #425262;"><b>Membership</b></a>
+					<ul class="dropdown-menu" style="margin-left: 15px;">
+						<li><a tabindex="-1" href="#">Why Join Us?</a></li>
+						<li><a tabindex="-1" href="#">Join AAUP</a></li>
+					</ul>
+				</li>
+			</ul>
+			</ul>
+		</div>
+  </nav>
 </div>
 
+<script>
+$(document).ready(function(){
+  $('.dropdown-submenu a.test').on("click", function(e){
+    $(this).next('ul').toggle();
+    e.stopPropagation();
+    e.preventDefault();
+  });
+});
+</script>
+
+
+<script>
+$(document).ready(function(){
+  $('.dropdown a.test').on("click", function(e){
+    $(this).next('ul').toggle();
+    e.stopPropagation();
+    e.preventDefault();
+  });
+});
+</script>
+ 
 <!-- IMAGE BAR! -->
 <div class="container"> 
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -160,15 +167,15 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <div class="item active">
-        <img src="assets/Images/imageTestCroped.png" alt="Los Angeles" style="width:100%;">
+        <img src="assets/Images/imageTestCroped.png"  style="width:100%;">
       </div>
 
       <div class="item">
-        <img src="assets/Images/BannerImageBuilding.png" alt="Chicago" style="width:100%;">
+        <img src="assets/Images/BannerImageBuilding.png"  style="width:100%;">
       </div>
     
       <div class="item">
-        <img src="assets/Images/image3.png" alt="New york" style="width:100%;">
+        <img src="assets/Images/image3.png" style="width:100%;">
       </div>
     </div>
 
@@ -188,9 +195,9 @@
 	
 <!--BAR BELOW THE IMAGE! --> 
 <div class = "dark-blue" style = "height: 100px; width: 100%; min-width: 1000px;">
-
-<img src="assets/Images/bannerTitle.png" alt="Colorado School of Mines Chapter" style = "padding-left: 20%;">
-
+	<div class= "container">
+		<img src="assets/Images/Mines_EEE_reverse4C_R.png" alt="Colorado School of Mines Chapter" style = "display:flex-inline; height: 90px; padding-top: 10px;">
+	</div>
 </div> 
 <!-- NAIN PAGE IN -->
 <div id="mainPage">
@@ -252,9 +259,15 @@ window.onclick = function(event) {
 }
 </script>	
 			
-			
-			
-			
+		<script>
+$(document).ready(function(){
+  $('.dropdown-submenu a.test').on("click", function(e){
+    $(this).next('ul').toggle();
+    e.stopPropagation();
+    e.preventDefault();
+  });
+});
+</script>			
 			
 			
 			
@@ -272,7 +285,7 @@ window.onclick = function(event) {
 			</div>
 		</div>
 	</div>
-	<div class="col-md-4" style = " border-style: solid; border-width: 30px 10px 30px 10px; border-radius: 25px;">
+	<div class="col-md-4" style = " border-style: solid; border-width: 5px 5px 5px 5px; border-radius: 25px;">
 			<a class="twitter-timeline" data-width="300" data-height="400" href="https://twitter.com/AAUP">Tweets by AAUP</a>
 	</div>
 </div>

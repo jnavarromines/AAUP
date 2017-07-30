@@ -1,6 +1,22 @@
 /* nav bar styling for outside div container */
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
 
+.navBar-font {
+	font-size: 20px;
+	color: white;
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+} 
+
+
 .video-style {
 	background-color: #3b5998;
 	border-radius: 0px 25px 25px 25px;
@@ -25,11 +41,6 @@ background-color: #2b3642;
 .light-blue {
 	background-color: #425262;
 	
-}
-
-.navBar {
-	color: black;
-	width: 100%;
 }
 
 .currentPageFont{
