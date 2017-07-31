@@ -1,6 +1,24 @@
 /* nav bar styling for outside div container */
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
 
+.navbar .nav > li > a {
+    float: none;
+    line-height: 19px;
+    padding: 9px 10px 11px;
+    text-decoration: none;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    color:  #ddd;
+}
+
+.navbar .nav > li:hover > a:hover {
+    float: none;
+    line-height: 19px;
+    padding: 9px 10px 11px;
+    text-decoration: none;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    color: white;
+}
+
 .navBar-font {
 	font-size: 20px;
 	color: white;
@@ -18,10 +36,8 @@
 
 
 .video-style {
-	background-color: #3b5998;
-	border-radius: 0px 25px 25px 25px;
-	
 	border-style: solid;
+	min-width: 500px;
     border-width: 20px 20px 20px 20px;
 	padding-top:0px;
 }
