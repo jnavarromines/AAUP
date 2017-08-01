@@ -31,12 +31,24 @@
 </head>
 
 
-<body id = "grad2">
-<div id="fb-root"></div>
+<body id = "grad1">
 
 
- 
- 
+<script type="text/javascript">
+$(document).ready(function(){
+    $(".dropdown").hover(            
+        function() {
+            $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true,true).slideDown("400");
+            $(this).toggleClass('open');        
+        },
+        function() {
+            $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true,true).slideUp("400");
+            $(this).toggleClass('open');       
+        }
+    );
+});
+</script>
+
 <div class = "light-blue" style = "margin-bottom: -20px;">
 	<nav class="navbar">
 		<div class="container">
@@ -49,12 +61,13 @@
 			</div>
 			<div style = "height: 100px;"><img src="assets/Images/aaup-logo-2_0.png" style=" height: 80px; border-style: solid; border-width: 5px; background-color: white; border-radius: 25px;"></div>
 				<ul class="nav navbar-nav" style = "display:inline;">
-					<li class= "active"><a class="btn btn-lg btn-link" href="index.html" style="margin-right: 50px; background-color: #D2492A;"><b>Home</b></a></li>
+<!-- HOME -->				
+					<li class= "active"><a class="btn btn-lg btn-link" href="index.html" style="margin-right: 50px; background-color: #425262"><b>Home</b></a></li>
 <!-- NEWS AND EVENTS -->
-					<li class="dropdown"><a class="btn-lg btn-link dropdown-toggle " data-toggle="dropdown" href="#" style ="background-color: #425262; margin-right: 50px;"><b>News + Events</b></a>
+					<li class="dropdown"><a class="btn-lg btn-link dropdown-toggle " data-toggle="dropdown" href="#" style ="background-color: #D2492A; margin-right: 50px;"><b>News + Events</b></a>
 						<ul class="dropdown-menu" style="margin-left: 15px;">
-							<li><a tabindex="-1" href="news.html">News</a></li>
-							<li><a tabindex="-1" href="#">Events</a></li>
+							<li><a tabindex="-1" href="https://www.aaup.org/news/aaup-news">News</a></li>
+							<li><a tabindex="-1" href="events.html">Events</a></li>
 						</ul>
 					</li>
 <!-- INFORMATION -->
@@ -112,7 +125,7 @@
 <!-- WHO WE ARE -->
 				<li class="dropdown"><a class="btn-lg btn-link dropdown-toggle " data-toggle="dropdown" href="#" style ="background-color: #425262; margin-right: 50px;"><b>Who We Are</b></a>
 					<ul class="dropdown-menu" style="margin-left: 15px;">
-						<li><a tabindex="-1" href="faculty.html">Faculty</a></li>
+						<li><a tabindex="-1" href="leaders.html">AAUP CSM Team</a></li>
 						<li><a tabindex="-1" href="our_purpose.html">Our Purpose</a></li>
 					</ul>
 				</li>
@@ -120,8 +133,8 @@
 <!-- MEMBERSHIP -->		
 				<li class="dropdown"><a class="btn-lg btn-link dropdown-toggle " data-toggle="dropdown" href="#" style ="background-color: #425262;"><b>Membership</b></a>
 					<ul class="dropdown-menu" style="margin-left: 15px;">
-						<li><a tabindex="-1" href="https://www.aaup.org/membership/join">Why Join Us?</a></li>
-						<li><a tabindex="-1" href="join_aaup.html">Join AAUP</a></li>
+						<li><a tabindex="-1" href="https://www.aaup.org/membership/join">Join AAUP</a></li>
+						<li><a tabindex="-1" href="join_aaup.html">Why Join Us?</a></li>
 					</ul>
 				</li>
 
@@ -129,153 +142,38 @@
 		</div>
   </nav>
 </div>
-
- 
-
-
-
 	
 <!-- NAIN PAGE IN -->
-<div id="mainPage" style = "padding-bottom: 50px;">
+<div id="mainPage">
 <section>
-        <!-- Page Heading -->
         <div class="row">
-            <div class="col-lg-12">
-							<div class = "testGradient">
-					<h1 class="page-header" style = "margin-left: 50px; font-size: 40px; font-family: 'Play', sans-serif;">
+            <div class="col-lg-12" >
+				<div class = "testGradient">
+					<h1 class="page-header" style = "padding-left: 50px; font-size: 40px; font-family: 'Play', sans-serif;">
 						<span style = "font-size: 70px; font-weight: 900; color: #830303;"><b><i>CSM AAUP</i></b></span>
-						<small>Faculty</small>
+						<small>Events</small>
 					</h1>
 				</div>
-            </div>
-        </div>
-        <!-- /.row -->
 
-        <!-- Project One -->
-		<div class = "headerGradient"style = "padding: 50px; border-radius: 25px; color:black;" >  
-		         <div class="row" >
-            <div class="col-md-7">
-                <a href="#">
-                    <img class="img-responsive" src="assets/Facultyimages/wendy.jpg" alt="" style = "padding-left: 50px; height: 250px;">
-                </a>
-            </div>
-            <div class="col-md-5">
-                <h2><b>Wendy Harris</b></h2>
-                <h4><b>Chapter President</b> </h4>
-                <p> Professor Geochemistry <br>
-					Department of Geology and Geological Engineering <br>
-					Phone: (+1) 303-273-3821 <br>
-					Fax: (+1) 303-273-3859<br>
-					Email: wharriso@mines.edu</p>
-                <a class="btn btn-primary" href="http://inside.mines.edu/Wendy-Harrison">Personal Website <span class="glyphicon glyphicon-chevron-right"></span></a>
-            </div>
-        </div>
-		
-		
-		
-		
-		
-        
-        <!-- /.row -->
-
-        <hr>
-
-        <!-- Project Two -->
-        <div class="row">
-            <div class="col-md-7">
-                <a href="#">
-                    <img class="img-responsive" src="assets/Facultyimages/marcelo.png" alt="" style = "padding-left: 50px; height: 250px;">
-                </a>
-            </div>
-            <div class="col-md-5">
-                <h2><b>Marcelo Godoy Simões</b></h2>
-                <h4><b>Chapter Vice President</b><br></h4>
-                <p>	Professor of Electrical Engineering<br>
-					Department of Electrical & Computer Science<br>
-					Phone: (303) 384-2350<br>
-					Email: msimoes@mines.edu</p>
-                <a class="btn btn-primary" href="http://inside.mines.edu/~msimoes/publications.html">Personal Website <span class="glyphicon glyphicon-chevron-right"></span></a>
-            </div>
-        </div>
-        <!-- /.row -->
-
-        <hr>
-		
-        <!-- Project Three -->
-        <div class="row">
-
-            <div class="col-md-7">
-                <a href="#">
-                    <img class="img-responsive" src="assets/Facultyimages/LNickum_RMNP.png" alt="" style = "padding-left: 50px; height: 250px;">
-                </a>
-            </div>
-            <div class="col-md-5">
-                <h2><b>Lisa Nickum</b></h2>
-                <h4><b>Library Faculty Representative</b></h4>
-                <p>Associate Librarian<br>
-					Phone: 303-273-3695 <br>
-					Email: lnickum@mines.edu</p></p>
-                <a class="btn btn-primary" href="https://webapps.mines.edu/DirSearch/Home/detail/Nickum%2cLisa%2cS.%2c">Personal Website <span class="glyphicon glyphicon-chevron-right"></span></a>
-            </div>
-        </div>
-		<hr>
-        <!-- Project Four -->
-		<div class="row">
-            <div class="col-md-7">
-                <a href="#">
-                    <img class="img-responsive" src="assets/Facultyimages/uweGreife.jpg" alt="" style = "padding-left: 50px; height: 250px;">
-                </a>
-            </div>
-            <div class="col-md-5">
-                <h2><b>Uwe Greife</b></h2>
-                <h4>
-					<b>Chapter Secretary and Treasurer</b><br></h4>
-                <p>Professor of Physics<br>
-					Department of Physics<br>
-					Phone: (303) 273-3618<br>
-					Email: ugreife@mines.edu</p>
-                <a class="btn btn-primary" href="http://inside.mines.edu/~ugreife/UGResearchMain.html">Personal Website <span class="glyphicon glyphicon-chevron-right"></span></a>
-            </div>
-        </div>
-        <!-- /.row -->
-
-        <hr>
-
-        <!-- Project Four -->
-        <div class="row">
-
-            <div class="col-md-7">
-                <a href="#">
-                    <img class="img-responsive" src="assets/Facultyimages/chuck.jpg" alt="" style = "padding-left: 50px; height: 250px;">
-                </a>
-            </div>
-            <div class="col-md-5">
-                <h2><b>Charles (Chuck) Stone</b></h2>
-                <h4><b>Teaching Professors’ Representative</b></h4>
-                <p>Teaching Professor<br>
-					Department of Physics<br>
-					Phone: (303) 273-3762<br>
-					Email: cstone@mines.edu</p></p>
-                <a class="btn btn-primary" href="http://inside.mines.edu/PH-charles-chuck-stone">Personal Website <span class="glyphicon glyphicon-chevron-right"></span></a>
             </div>
         </div>
 
-        <!-- /.row -->
-
-        <hr>
-
+             
+                <iframe src="https://calendar.google.com/calendar/embed?title=AAUP%20Events&amp;height=700&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=mymail.mines.edu_hhlcchteheru4s5qfljptert28%40group.calendar.google.com&amp;color=%23182C57&amp;ctz=America%2FDenver" style="border:solid; border-width: 5px 0px 0px 25px; border-color: white; border-radius: 25px 0px 0px 0px;" width="1000" height="600" frameborder="0" scrolling="no"></iframe>
 
 
-</div>
+
+
+
 </section>
 </div>
 
-<footer style=" background-color:#425262; height: 220px; top: -10px; z-index:10; width: 100%;position: relative; min-width: 1500px;">
-	<div style = "background-color: #2b3642; height: 20px; width: 100%; min-width: 1000px;">
+<footer style=" background-color:#425262; height: 300px; top: -10px; z-index:10; width: 100%;position: relative; min-width: 1500px;">
+	<div style = "background-color: #2b3642; height: 50px; width: 100%; min-width: 1000px;">
 
 	</div>
 
-		<div class="row" style="margin-left: 15%; margin-top: 10px; margin-right: 15%; font-weight: bold; font-size:medium;">
+		<div class="row" style="margin-left: 15%; margin-top: 50px; margin-right: 15%; font-weight: bold; font-size:medium;">
 			<div class="col-xs-7">
 				<img src="assets/Images/aaup_nav.png" style = "width:195.5px; height: 68px; float: left;"/>
 				<p style= "float:left; position: relative; margin-left: 10px; color: #92a2bd;">
@@ -283,7 +181,7 @@
 				</p>
 			</div>
 
-			<div class="col-xs-5" style= " background-color: clear; margin-top: 0px;">
+			<div class="col-xs-5" style= " background-color: clear; margin-top: -50px;">
 
 				<a class="buttonFooter buttonFooter1 buttonFooterHover"  href="https://www.aaup.org/">Visit AAUP</a>
 				<a  class="buttonFooter buttonFooter2 buttonFooterHover" href="https://aaupcolorado.org/" >Visit AAUP of Colorado</a>
