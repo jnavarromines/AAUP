@@ -54,4 +54,36 @@ window.twttr = (function(d, s, id) {
   $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
 });
 
-	
+$(document).ready(function(){
+    $(".dropdown").hover(
+        function() {
+            $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true,true).slideDown("400");
+            $(this).toggleClass('open');
+        },
+        function() {
+            $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true,true).slideUp("400");
+            $(this).toggleClass('open');
+        }
+    );
+});
+
+
+     // Get the modal
+     var modal = document.getElementById('id01');
+
+     // When the user clicks anywhere outside of the modal, close it
+     window.onclick = function(event) {
+       if (event.target == modal) {
+         modal.style.display = "none";
+       }
+     }
+
+
+
+     $(document).ready(function() {
+       $('.dropdown-submenu a.test').on("click", function(e) {
+         $(this).next('ul').toggle();
+         e.stopPropagation();
+         e.preventDefault();
+       });
+     });
