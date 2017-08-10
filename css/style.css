@@ -294,10 +294,10 @@ input[type=text], input[type=password] {
 	color: white;
 	position: relative;
 	min-width: 380px;
+	background-color: none;
 }
 
 .containerBorder{
-	border-radius: 20px;	
 		background-color: #2b3642;
 		padding: 10px;
 }
