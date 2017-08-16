@@ -148,22 +148,25 @@
               </p>
               <a class="btn btn-primary" style="color: white; width: 200px;" onclick="document.getElementById('id01').style.display='block'">Need Help?<span class="glyphicon glyphicon-chevron-right" style="float: right;"></span></a>
             </div>
-            <div id="id01" class="modal">
-              <form class="modal-content animate">
-                <div class="container containerBorder">
-                  <div class="imgcontainer">
-                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times</span>
+            <!-- CONTACT US FORUM START -->
+                  <div id="id01" class="modal" style="background-color: none;">
+                    <form class="modal-content animate" action="https://formspree.io/aaupmines@gmail.com" method="POST">
+                      <div class="container containerBorder">
+                        <div class="imgcontainer">
+                          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times</span>
+                        </div>
+                        <label><b>Tell us what we can help you with:</b></label>
+                        <input name="Title:" class="form-control" id="exampleTextarea" placeholder="Write a brief description here (title)" rows="1"></input>
+
+                        <div class="form-group textAreaHeight">
+                          <label for="exampleTextarea">Your message:</label>
+                          <textarea class="form-control" id="exampleTextarea" name="Message:" placeholder="Note: All messages sent are anonymous. Names are optional!" rows="5"></textarea>
+                        </div>
+                        <button type="submit" class="submittButton" type="submit" value="Send">Submit</button>
+                      </div>
+                    </form>
                   </div>
-                  <label><b>Tell Us What We Can Help You With:</b></label>
-                  <textarea class="form-control" id="exampleTextarea" placeholder="Write your message here" rows="1"></textarea>
-                  <div class="form-group textAreaHeight">
-                    <label for="exampleTextarea">Your Message:</label>
-                    <textarea class="form-control" id="exampleTextarea" placeholder="Write your message here" rows="5"></textarea>
-                  </div>
-                  <button type="submit" class="submittButton">Submit</button>
-                </div>
-              </form>
-            </div>
+                  <!-- CONTACT US FORUM END -->
           </div>
         </div>
 		<div class="col-md-4">
